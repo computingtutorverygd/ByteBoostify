@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Bases</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+</head>
+<body>
+    <p>
+        Number bases, also known as numeral systems, are systems of representing numbers using a finite set of symbols. 
+        The most commonly used numeral systems are decimal (base-10), binary (base-2), and hexadecimal (base-16). 
+        Each of these systems has its own set of symbols and rules for representing numbers.
+    </p>
+    <h4>Decimal to Binary</h4>
+    <form method="post">
+        <input type="text" name="decimal-digits"/>
+        <input type="submit" name="decimal-to-binary"/>
+    </form>
+    {% if result %}
+    <div style="margin: auto; width: 100%">
+        <div style="display: flex;">
+            <div style="flex: 1">
+                <h2>Decimal</h2>
+                <h2>{{input_value}}</h2>
+            </div>
+            <div style="flex: 1">
+                <h2>Binary</h2>
+                <h2>{{result}}</h2>
+            </div>
+        </div>
+        <br>
+        <div class="steps-box">
+            {% for step in steps %}
+                <p>{{step}}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</body>
+</html>
