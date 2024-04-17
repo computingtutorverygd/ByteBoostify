@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+</head>
+<body>
+    <h1>Computing Flashcards</h1>
+    <h1>Identify the correct matching term and definition:</h1>
+    <div style="display: flex">
+        {% if range(0, 2)|random() %}
+            <div style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em">
+                <u>{{correct_term}}</u><br>
+                {{correct_definition}}
+            </div>
+            <div style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1">
+                <u>{{wrong_term}}</u><br>
+                {{wrong_definition}}
+            </div>
+        {% else %}
+            <div style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em">
+                <u>{{wrong_term}}</u><br>
+                {{wrong_definition}}
+            </div>
+            <div style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1">
+                <u>{{correct_term}}</u><br>
+                {{correct_definition}}
+            </div>
+        {% endif %}
+    </div>
+    <br>
+    <form method="post">
+        <input type="submit" value="Generate a new flashcard!"/>
+    </form>
+</body>
+</html>

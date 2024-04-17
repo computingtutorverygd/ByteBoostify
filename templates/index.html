@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBoostify</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+</head>
+<body>
+    <h1><b>ByteBoostify</b></h1>
+    <form method="post">
+        <div class="content-box">
+            <h3>Number Bases and Systems</h3>
+            <img src="{{url_for('static', filename='images/binary_image.png')}}" alt="image of binary digits" class="content-image"/>
+            <p>Learn about the various number bases available and see a visualisation of converting between these bases here!</p>
+            <input type="submit" name="content-box-1" class="content-submit" value="View here!"/>
+        </div>
+    </form>
+    <form method="post">
+        <div class="content-box">
+            <h3>Flashcards</h3>
+            <img src="{{url_for('static', filename='images/binary_image.png')}}" alt="image of binary digits" class="content-image"/>
+            <p>Learn Computing Definitions through flashcards!</p>
+            <input type="submit" name="content-box-2" class="content-submit" value="View here!"/>
+        </div>
+    </form>
+</body>
+</html>
