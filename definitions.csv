@@ -1,0 +1,6 @@
+Processor,"Processes data and follows instructions; consists of an arithmetic logic unit and a control unit"
+Memory,"Stores data, instructions and the results of processing for immediate use"
+Data bus,"Transports data between memory and processor; bi-directional"
+Address bus,"Transports required memory location from processor to memory; uni-directional"
+Arithmetic logic unit,"Part of the processor that processes data by performing basic mathematical and logical operations"
+Control unit,"Part of the processor that follows instructions and decides when data should be stored, received or transmitted by different parts of the computer"
