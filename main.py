@@ -3,7 +3,7 @@ from conversion import decimal_to_binary
 from random import randint
 import csv
 
-with open('definitions.csv', 'r') as f:
+with open('Definition Dataset.csv', 'r') as f:
     definitions = list(csv.reader(f))
 
 app = Flask(__name__)
