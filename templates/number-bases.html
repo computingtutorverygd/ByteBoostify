@@ -7,35 +7,71 @@
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
 </head>
 <body>
-    <p>
-        Number bases, also known as numeral systems, are systems of representing numbers using a finite set of symbols. 
-        The most commonly used numeral systems are decimal (base-10), binary (base-2), and hexadecimal (base-16). 
-        Each of these systems has its own set of symbols and rules for representing numbers.
-    </p>
-    <h4>Decimal to Binary</h4>
-    <form method="post">
-        <input type="text" name="decimal-digits"/>
-        <input type="submit" name="decimal-to-binary"/>
-    </form>
-    {% if result %}
-    <div style="margin: auto; width: 100%">
-        <div style="display: flex;">
-            <div style="flex: 1">
-                <h2>Decimal</h2>
-                <h2>{{input_value}}</h2>
-            </div>
-            <div style="flex: 1">
-                <h2>Binary</h2>
-                <h2>{{result}}</h2>
-            </div>
-        </div>
-        <br>
-        <div class="steps-box">
-            {% for step in steps %}
-                <p>{{step}}</p>
-            {% endfor %}
-        </div>
+    <div style="border: 2px solid black; padding: 5px 5px 5px 5px;">
+        <u>What are number systems?</u>
+        <p>
+            Number bases, also known as numeral systems, are systems of representing numbers using a finite set of symbols. 
+            The most commonly used numeral systems are decimal (base-10), binary (base-2), and hexadecimal (base-16).
+            Each of these systems has its own set of symbols and rules for representing numbers.
+        </p>
+        <p>
+            Decimal (base-10) is the number system that we commonly use in our daily lives and the one we are most familiar with. It consists of ten digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+            Each position in a decimal number represents a power of 10, with the rightmost digit representing the ones place, the next representing
+            the tens place, and so on.
+        </p>
+        <p>
+            Hexadecimal (base-16) is a number system commonly used in computing and digital electronics. It consists of 16 digits: 0-9 and A-F,
+            where A represents 10, B represents 11, and so on, up to F representing 15. Each position in a hexadecimal number represents a power of 16,
+            with the rightmost digit representing the ones place, the next representing the sixteens place, and the next after representing the 256th place
+            and so on. One example of a valid hexadecimal digit is 1A3, which is 419 when converted to decimal.
+        </p>
+        <p>
+            Binary (base-2) is the simplest number system used in computing and digital electronics. It consists of only two digits: 0 and 1.
+            Each position in a binary number represents a power of 2, with the rightmost digit representing the ones place, the next representing
+            the twos place, and the next after representing the fours place, and so on. One example of a valid binary digit is 1001, which is 9 when converted to decimal.
+        </p>
+        <p>
+            In order to understand these conversions further, you can try out the number system converters below:
+        </p>
     </div>
-    {% endif %}
+    <h3 style="text-align:center;"><u>Choose a conversion method:</u></h3>
+    <div id="conversion-box">
+        <form method="post">
+            <input type="submit" name="Decimal-Binary" value="Decimal to Binary" id="dec-bin" class="conversion-button">
+            <input type="submit" name="Binary-Decimal" value="Binary to Decimal" id="bin-dec" class="conversion-button">
+            <input type="submit" name="Decimal-Hexadecimal" value="Decimal to Hexadecimal" id="dec-hex" class="conversion-button">
+            <input type="submit" name="Hexadecimal-Decimal" value="Hexadecimal to Decimal" id="hex-dec" class="conversion-button">
+        </form>
+    </div><br>
+    <div style="text-align: center;">
+        <form method="post">
+            <input type="text" name="digits" required/>
+            <input type="submit" name="decimal-to-binary"/>
+        </form>
+        {% if type_error %}
+            <p>You have entered an invalid value. Please enter a valid value for conversion.</p>
+        {% endif %}
+        {% if result %}
+            <br>
+            <div style="margin: auto; width: 100%">
+                <div style="display: flex;">
+                    <div style="flex: 1">
+                        <h2>{{start_conversion}}</h2>
+                        <h2>{{input_value}}</h2>
+                    </div>
+                    <div style="flex: 1">
+                        <h2>{{end_conversion}}</h2>
+                        <h2>{{result}}</h2>
+                    </div>
+                </div>
+                <br>
+                <div class="steps-box" style="text-align: left;">
+                    {% for step in steps %}
+                        <p>>>> {{step}}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
