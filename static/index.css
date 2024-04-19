@@ -1,0 +1,23 @@
+body {
+    text-align: center; /* Center align the content */
+}
+.content-menu {
+    display: flex;
+    justify-content: center; /* Center align flex items horizontally */
+    align-items: center; /* Center align flex items vertically */
+    flex-wrap: wrap;
+}
+.content-box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+.content-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.content-submit {
+    margin-top: 10px;
+}

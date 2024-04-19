@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteBoostify</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}"/>
 </head>
 <body>
     <h1><b>ByteBoostify</b></h1>
@@ -13,14 +14,14 @@
             <form method="post">
                 <h3>Number Bases and Systems</h3>
                 <img src="{{url_for('static', filename='images/binary_image.png')}}" alt="image of binary digits" class="content-image"/>
-                <p>Learn about the various number bases available and see a visualisation of converting between these bases here!</p>
+                <p>Learn about the various number bases available and see a visualization of converting between these bases here!</p>
                 <input type="submit" name="content-box-1" class="content-submit" value="View here!"/>
             </form>
         </div>
         <div class="content-box">
             <form method="post">
                 <h3>Flashcards</h3>
-                <img src="{{url_for('static', filename='images/cards.png')}}" alt="image of binary digits" class="content-image"/>
+                <img src="{{url_for('static', filename='images/cards.png')}}" alt="image of cards" class="content-image"/>
                 <p>Learn Computing Definitions through flashcards!</p>
                 <input type="submit" name="content-box-2" class="content-submit" value="View here!"/>
             </form>
