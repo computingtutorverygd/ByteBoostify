@@ -48,6 +48,9 @@
             if (isCorrect) {
                 points = parseInt(points) + 1; // Increment points locally
             }
+            else {
+                points = Math.max(0, points - 1); // Decrement points, but ensure it doesn't go below 0
+            }
             document.location.href = '/increment_points?points=' + points + '&is_correct=' + isCorrect;
         }
 
