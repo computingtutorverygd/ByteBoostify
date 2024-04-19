@@ -93,5 +93,10 @@ def increment_points():
     session['points'] = points
     return redirect(url_for('flashcards', points=points)) # Return a success message to the AJAX request
 
+@app.route('/reset_points', methods=['GET', 'POST'])
+def reset_points():
+    session['points'] = 0
+    return redirect(url_for('flashcards', points=0))
+
 
 app.run(debug=True)

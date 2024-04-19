@@ -15,31 +15,34 @@
 
     <div style="display: flex">
         {% if range(0, 2)|random() %}
-            <button style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em" onclick="incrementPoints('{{ points }}', true)">
+            <button style="font-size:20px; border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em" onclick="incrementPoints('{{ points }}', true)">
                 <u>{{ correct_term }}</u><br>
-                <u>{{ correct_definition }}</u><br>
+                {{ correct_definition }}<br>
             </button>
-            <button style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1" onclick="incrementPoints('{{ points }}', false)">
+            <button style="font-size:20px; border: 2px solid black; padding: 2em 2em 2em 2em; flex:1" onclick="incrementPoints('{{ points }}', false)">
                 <u>{{ wrong_term }}</u><br>
-                <u>{{ wrong_definition }}</u><br>
+                {{ wrong_definition }}<br>
             </button>
         {% else %}
-            <button style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1" onclick="incrementPoints('{{ points }}', false)">
+            <button style="font-size:20px; border: 2px solid black; padding: 2em 2em 2em 2em; flex:1" onclick="incrementPoints('{{ points }}', false)">
                 <u>{{ wrong_term }}</u><br>
-                <u>{{ wrong_definition }}</u><br>
+                {{ wrong_definition }}<br>
             </button>
 
-            <button style="border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em" onclick="incrementPoints('{{ points }}', true)">
+            <button style="font-size:20px; border: 2px solid black; padding: 2em 2em 2em 2em; flex:1; margin-right:1em" onclick="incrementPoints('{{ points }}', true)">
                 <u>{{ correct_term }}</u><br>
-                <u>{{ correct_definition }}</u><br>
+                {{ correct_definition }}<br>
             </button>
 
         {% endif %}
     </div>
     <br>
-    <form id="new-flashcard-form" method="post">
-        <input type="submit" value="Generate a new flashcard!"/>
+
+
+    <form id="reset-points-form" method="post">
+        <input type="submit" value="Reset points"/>
     </form>
+
     <script>
         function incrementPoints(points, isCorrect) {
             if (isCorrect) {
@@ -47,6 +50,11 @@
             }
             document.location.href = '/increment_points?points=' + points + '&is_correct=' + isCorrect;
         }
+
+        document.getElementById('reset-points-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.location.href = '/reset_points';
+        });
     </script>
 
 
