@@ -1,396 +1,101 @@
-computer,"Device that can receive data,
-process the data according to a set
-of instructions and produce the
-processed data as a result"
-Computer architecture, "How a computer is designed and
-built to function, including how the
-parts of the computer are designed,
-organised and connected"
-Byte,"Binary number
-made up of
-eight bits"
-Bit,"Binary digit which
-can take on the value
-of either 0 or 1"
-Arithmetic logic unit (ALU),"Part of the processor that
-processes data by performing basic
-mathematical and logical operations"
-"Central processing unit
-(or processor)","Part of the computer that processes
-data and follows instructions"
-Control unit,"Part of the processor that follows
-instructions and decides when
-data should be stored, received or
-transmitted by different parts of
-the computer"
+computer,"Device that can receive data, process the data according to a set of instructions and produce the processed data as a result"
+Computer architecture, "How a computer is designed and built to function, including how the parts of the computer are designed, organised and connected"
+Byte,"Binary number made up of eight bits"
+Bit,"Binary digit which can take on the value of either 0 or 1"
+Arithmetic logic unit (ALU),"Part of the processor that processes data by performing basic mathematical and logical operations"
+"Central processing unit (or processor)","Part of the computer that processes data and follows instructions"
+Control unit,"Part of the processor that follows instructions and decides when data should be stored, received or transmitted by different parts of the computer"
 Execute,To follow or perform an instruction
-Software,"Set of instructions to perform
-specific tasks on a computer"
-Address,"Number that is used to locate a
-byte in memory"
-Memory,"Device that is used to store data for
-immediate use in a computer"
-Hard disk (or hard drive),"Secondary storage where data
-is stored on rigid rotating disks
-coated with a magnetic material"
-Volatile,"Lost when the power supply
-is interrupted"
-Bi-directional,"Able to work in two directions, to
-and fro"
-Data bus,"Bus that is used to transport data
-between memory and the processor"
-Address bus,"Bus that is used to specify memory
-address information"
+Software,"Set of instructions to perform specific tasks on a computer"
+Address,"Number that is used to locate a byte in memory"
+Memory,"Device that is used to store data for immediate use in a computer"
+Hard disk (or hard drive),"Secondary storage where data is stored on rigid rotating disks coated with a magnetic material"
+Volatile,"Lost when the power supply is interrupted"
+Bi-directional,"Able to work in two directions, to and fro"
+Data bus,"Bus that is used to transport data between memory and the processor"
+Address bus,"Bus that is used to specify memory address information"
 Uni-directional,Able to work in one direction only
-Magnetic Storage,"Data is stored on a
-magnetic material
-that can be read
-or written by a
-magnetic head"
-Optical Storage,"Data is stored as
-very small pits or
-indentations that
-can be read or
-written by a laser"
-Solid-state Storage,"Data is stored in
-electronic circuits
-called flash
-memory that
-have no moving
-parts"
-Decomposition,"Breaking down a complex problem
-or process into smaller and more
-manageable parts"
-Sub-problem,"A problem whose solution contributes
-to the solution of a bigger problem"
-Generalisation,"Technique of replacing two
-or more similar problems or
-solutions with a single, more
-general problem or solution"
-Pattern recognition,Identifying similaritiesamong two or more items
-Dry run,"Process of running through a set of
-steps manually"
-Compiler,"Code translator program
-that translates source
-code into machine code
-completely before running
-the compiled program"
-Interpreter,"Code translator program
-that translates source code
-into machine code while
-the interpreted program
-is running"
-Global variable,"Variable that is created
-outside of a UDF and is
-readable from the UDFs
-body if its name is not
-hidden by a local variable"
-Data validation,"Process of ensuring that
-the input data supplied to
-a system satisfies a set of
-rules such that it is sensible,
-complete and within
-acceptable boundaries."
-Run-time error,"Error that occurs while the
-program is running"
-Logic error,"Error that causes the
-output of a program to
-be different from what
-is expected"
-Data corruption,"When data is made unusable
-by errors or alterations"
-Data loss,"When data is destroyed and
-cannot be recovered"
-Backup,"Copy of data that is made in case
-the original is damaged or lost"
-"Uninterruptible power
-supply (UPS)","Device that provides enough
-emergency power for a
-computer to properly shut down
-in case of a power failure"
-Authentication,"Process of verifying the
-identity of a user"
-Authentication factor,"Category of evidence that
-is used for authentication:
-something the user knows
-or owns, or something
-that is measured from a
-physical part of the user"
-Unauthorised access,"Situation where data
-owned by someone is
-used by someone else
-without permission"
-Security token,"Device that is used
-specifically for authentication
-purposes"
-Two-factor authentication,"Type of authentication that
-uses evidence from both
-something the user knows
-and something the user owns"
-Biometrics,"Type of authentication
-based on the
-measurement of human
-physical characteristics"
-Identity theft,"Impersonation of another
-person to steal personal
-details such as name
-and identity number for
-fraudulent purposes"
-"Access control
-(or authorisation)","Ability of a computer to control
-a users access to data and
-resources"
-Permissions,"Settings to control the ability of
-users to view or make changes
-to the contents of a file or folder"
-Administrator,"Special user who can override
-the permissions for almost any
-file or folder"
-Administrator rights,"Ability of a user to perform
-tasks related to authentication
-and authorisation, such as
-creating and removing user
-accounts, resetting passwords
-and overriding file permissions"
-Firewall,"Device or computer
-program that prevents
-unauthorised access to or
-from a private network"
-Traffic,"Transmission of data over
-a network"
-Application,"Software designed for users
-to perform specific tasks"
-Encryption,"Process of encoding a
-message so that a secret
-key is needed to decode
-the data"
-Intranet,"Private network that only
-authorised users within an
-organisation can access"
-Malicious software (or malware),"Software that is intentionally used to
-damage, disrupt or gain unauthorised
-access to a computer system"
-Spamming,"Mass distribution of unwanted messages
-or advertising to email addresses which
-are collected from sources such as public
-mailing lists, social networking sites,
-company websites and personal blogs"
-Cookie,"? A small file used by websites to store personal information on a users
-
-web browser
-? Although usually not malicious in nature, cookies are sometimes
-misused to collect personal information about users"
-Pharming,"? The interception of requests sent from a computer to a legitimate website
-and redirection to a fake website to steal personal data or credit card
-details
-? The stolen data can then be used for unauthorised access to even more
-of the victim's data
-? More difficult to detect than phishing as the fake website uses the same
-address as the real website"
-Phishing,"? The use of emails and fake websites that appear to be from reputable
-companies in order to steal personal information such as passwords and
-credit card numbers from users
-? The stolen data can then be used for unauthorised access to even more
-of the victim's data"
-Spamming,"? The mass distribution of unwanted messages or advertising to email
-addresses which are collected from sources such as public mailing lists,
-social networking sites, company websites and personal blogs"
-Spyware,"? A hidden program that secretly collects personal information about
-its users and transmits this information to attackers without the users
-knowledge
-? The collected data can then be used for unauthorised access to even
-more of the victim's data"
-Trojan horse,"? A computer program that pretends to be a harmless file or useful
-
-application
-? Once a Trojan horse is run, it does something harmful such as giving
-intruders unauthorised access to the computer instead"
-"Unauthorised
-access","? The use of data owned by someone by someone else, such as an
-intruder, without permission (see section 7.2)
-? May arise as a result of other privacy and security threats that bypass
-authentication and authorisation by exploiting software bugs or tricking
-the user into performing harmful actions
-? Unauthorised access to passwords or private information can lead to
-identity theft, stolen money or public embarrassment"
-Virus,"? A computer program that attaches itself to a normally harmless program
-
-and modifies it
-? When the modified program is run by a user, the virus attaches copies of
-itself to any other programs it can find, thus infecting them"
-Worm,"? A computer program that runs automatically and attempts to spread by
-
-sending copies of itself to other computers
-? Unlike a virus, a worm does not need to attach itself to an existing
-program"
-Anti-spyware,"Software to detect, remove
-and stop spyware and other
-malware from running"
-Anti-virus,"Software to detect, remove
-and stop viruses and other
-malware from running"
-Operating system,"Software designed to
-support a computers basic
-functions"
-Signature (malware),"Unique evidence that is used
-to detect a known version of
-some malicious software"
-Copyright,"The legal right of owners
-to control the use and
-distribution of their
-intellectual property"
-Intellectual property,"Creations of the mind that
-have value but can exist
-purely as data with no
-physical form"
-Licence,"Official description of
-activities that are authorised
-or forbidden by the owner
-of intellectual property"
-"Free and open-source
-software (FOSS)","Software where users are
-given freedom to change,
-copy, study and share the
-software and its source code"
-Public domain software,"Software where the legal
-protections that are typically
-granted to intellectual
-property have either expired,
-been surrendered or are
-simply inapplicable"
-Freeware,"Proprietary software that is
-available for use at no cost"
-Open courseware,"Higher-education course
-materials such as videos
-and notes created by
-universities and distributed
-for free on the Internet"
-Proprietary software,"Commercial software
-for which most of the
-legal protections under
-copyright are retained"
-Shareware,"Demonstration software
-that is distributed for free
-but for a specific evaluation
-period only"
-Copyright infringement,"Use or distribution of
-copyrighted work without
-the permission of the
-copyright owner"
-Crack,"Program that modifies
-proprietary software so that
-the software cannot detect
-that it is being used illegally"
-Software piracy,"Crime of copying,
-distributing and/or using
-proprietary software
-in a manner that is not
-permitted by its licence"
-Plagiarism,"Passing off someone
-else's original work
-as one's own"
-Citation,"Statement to
-acknowledge and
-provide credit to
-the author(s) of
-reproduced materials
-in published books
-and articles"
-"Internet Protocol (IP)
-address","Sequence of bytes
-that is used to identify
-a computer or device
-on the Internet"
-Network address,"Unique name or
-sequence of bytes that
-is used to identify a
-computer or device in
-a network"
-"Media Access Control
-(MAC) address","Sequence of bytes (usually
-permanent in nature) that is
-used to identify a particular
-network interface controller"
-Transmission medium,"Means of connecting
-two or more computers
-together, such as using
-copper cables, radio
-waves or light pulses,
-so that they may
-exchange data and
-interact with each other"
-Local area network (LAN),"Network of computing
-devices connected within
-a small geographical area,
-typically within the same
-building, such as a home,
-school or office"
-"Metropolitan area
-network (MAN)","Network of computing
-devices typically spanning
-across two or more
-buildings within the same
-town or city"
-"Wide area network
-(WAN)","Network of computing
-devices covering a
-large-scale geographical
-area, typically across
-multiple geographical
-locations"
-Ethernet,"Most commonly used
-wired network protocol
-for local and metropolitan
-area networks"
-Network protocol,"Set of standards and rules
-that govern how two or
-more devices communicate
-over a network"
-Wired network,"Network of devices
-connected by a physical
-medium, such as cables"
-Client,"Computer that initiates
-a connection to a server
-to request for resources
-and services to perform
-operations"
-Server,"Computer that shares
-resources with and
-responds to requests from
-devices and other servers
-on the network"
-"Wireless access point
-(WAP)","Network hardware that
-provides a connection
-between wireless devices
-up to 100 metres away
-and can connect to
-wired networks"
-Wireless network,"Network of devices
-in which signals are
-transmitted without the use
-of a physical medium"
-Network hub (or hub),"Device that transmits
-received packets to all
-connected devices"
-Packet (computing),"A unit of broken-up data
-containing a header with
-information about the
-source and destination
-addresses that are
-needed for transmission"
-Network switch (or switch),"Device that constructs
-a single network by
-connecting multiple similar
-networks together"
-Router,"Device that forwards packets
-between separate networks"
-Demodulation,"Conversion of
-transmitted signals into
-digital data"
-Modem,"Device responsible
-for modulation
-and demodulation"
-Modulation,"Conversion of digital
-data into a form suitable
-for transmission"
+Magnetic Storage,"Data is stored on a magnetic material that can be read or written by a magnetic head"
+Optical Storage,"Data is stored as very small pits or indentations that can be read or written by a laser"
+Solid-state Storage,"Data is stored in electronic circuits called flash memory that have no moving parts"
+Decomposition,"Breaking down a complex problem or process into smaller and more manageable parts"
+Sub-problem,"A problem whose solution contributes to the solution of a bigger problem"
+Generalisation,"Technique of replacing two or more similar problems or solutions with a single, more general problem or solution"
+Pattern recognition,Identifying similarities among two or more items
+Dry run,"Process of running through a set of steps manually"
+Compiler,"Code translator program that translates source code into machine code completely before running the compiled program"
+Interpreter,"Code translator program that translates source code into machine code while the interpreted program is running"
+Global variable,"Variable that is created outside of a UDF and is readable from the UDFs body if its name is not hidden by a local variable"
+Data validation,"Process of ensuring that the input data supplied to a system satisfies a set of rules such that it is sensible, complete and within acceptable boundaries."
+Run-time error,"Error that occurs while the program is running"
+Logic error,"Error that causes the output of a program to be different from what is expected"
+Data corruption,"When data is made unusable by errors or alterations"
+Data loss,"When data is destroyed and cannot be recovered"
+Backup,"Copy of data that is made in case the original is damaged or lost"
+"Uninterruptible power supply (UPS)","Device that provides enough emergency power for a computer to properly shut down in case of a power failure"
+Authentication,"Process of verifying the identity of a user"
+Authentication factor,"Category of evidence that is used for authentication: something the user knows or owns, or something that is measured from a physical part of the user"
+Unauthorised access,"Situation where data owned by someone is used by someone else without permission"
+Security token,"Device that is used specifically for authentication purposes"
+Two-factor authentication,"Type of authentication that uses evidence from both something the user knows and something the user owns"
+Biometrics,"Type of authentication based on the measurement of human physical characteristics"
+Identity theft,"Impersonation of another person to steal personal details such as name and identity number for fraudulent purposes"
+"Access control (or authorisation)","Ability of a computer to control a users access to data and resources"
+Permissions,"Settings to control the ability of users to view or make changes to the contents of a file or folder"
+Administrator,"Special user who can override the permissions for almost any file or folder"
+Administrator rights,"Ability of a user to perform tasks related to authentication and authorisation, such as creating and removing user accounts, resetting passwords and overriding file permissions"
+Firewall,"Device or computer program that prevents unauthorised access to or from a private network"
+Traffic,"Transmission of data over a network"
+Application,"Software designed for users to perform specific tasks"
+Encryption,"Process of encoding a message so that a secret key is needed to decode the data"
+Intranet,"Private network that only authorised users within an organisation can access"
+Malicious software (or malware),"Software that is intentionally used to damage, disrupt or gain unauthorised access to a computer system"
+Spamming,"Mass distribution of unwanted messages or advertising to email addresses which are collected from sources such as public mailing lists, social networking sites, company websites and personal blogs"
+Cookie,"A small file used by websites to store personal information on a users web browser. Although usually not malicious in nature, cookies are sometimes misused to collect personal information about users"
+Pharming,"The interception of requests sent from a computer to a legitimate website and redirection to a fake website to steal personal data or credit card details. The stolen data can then be used for unauthorised access to even more of the victim's data. More difficult to detect than phishing as the fake website uses the same address as the real website"
+Phishing,"The use of emails and fake websites that appear to be from reputable companies in order to steal personal information such as passwords and credit card numbers from users. The stolen data can then be used for unauthorised access to even more of the victim's data"
+Spamming,"The mass distribution of unwanted messages or advertising to email addresses which are collected from sources such as public mailing lists, social networking sites, company websites and personal blogs"
+Spyware,"A hidden program that secretly collects personal information about its users and transmits this information to attackers without the users knowledge. The collected data can then be used for unauthorised access to even more of the victim's data"
+Trojan horse,"A computer program that pretends to be a harmless file or useful application. Once a Trojan horse is run, it does something harmful such as giving intruders unauthorised access to the computer instead"
+"Unauthorised access","The use of data owned by someone by someone else, such as an intruder, without permission. May arise as a result of other privacy and security threats that bypass authentication and authorisation by exploiting software bugs or tricking the user into performing harmful actions. Unauthorised access to passwords or private information can lead to identity theft, stolen money or public embarrassment"
+Virus,"A computer program that attaches itself to a normally harmless program and modifies it. When the modified program is run by a user, the virus attaches copies of itself to any other programs it can find, thus infecting them"
+Worm,"A computer program that runs automatically and attempts to spread by sending copies of itself to other computers. Unlike a virus, a worm does not need to attach itself to an existing program"
+Anti-spyware,"Software to detect, remove and stop spyware and other malware from running"
+Anti-virus,"Software to detect, remove and stop viruses and other malware from running"
+Operating system,"Software designed to support a computers basic functions"
+Signature (malware),"Unique evidence that is used to detect a known version of some malicious software"
+Copyright,"The legal right of owners to control the use and distribution of their intellectual property"
+Intellectual property,"Creations of the mind that have value but can exist purely as data with no physical form"
+Licence,"Official description of activities that are authorised or forbidden by the owner of intellectual property"
+"Free and open-source software (FOSS)","Software where users are given freedom to change, copy, study and share the software and its source code"
+Public domain software,"Software where the legal protections that are typically granted to intellectual property have either expired, been surrendered or are simply inapplicable"
+Freeware,"Proprietary software that is available for use at no cost"
+Open courseware,"Higher-education course materials such as videos and notes created by universities and distributed for free on the Internet"
+Proprietary software,"Commercial software for which most of the legal protections under copyright are retained"
+Shareware,"Demonstration software that is distributed for free but for a specific evaluation period only"
+Copyright infringement,"Use or distribution of copyrighted work without the permission of the copyright owner"
+Crack,"Program that modifies proprietary software so that the software cannot detect that it is being used illegally"
+Software piracy,"Crime of copying, distributing and/or using proprietary software in a manner that is not permitted by its licence"
+Plagiarism,"Passing off someone else's original work as one's own"
+Citation,"Statement to acknowledge and provide credit to the author(s) of reproduced materials in published books and articles"
+"Internet Protocol (IP) address","Sequence of bytes that is used to identify a computer or device on the Internet"
+Network address,"Unique name or sequence of bytes that is used to identify a computer or device in a network"
+"Media Access Control (MAC) address","Sequence of bytes (usually permanent in nature) that is used to identify a particular network interface controller"
+Transmission medium,"Means of connecting two or more computers together, such as using copper cables, radio waves or light pulses, so that they may exchange data and interact with each other"
+Local area network (LAN),"Network of computing devices connected within a small geographical area, typically within the same building, such as a home, school or office"
+"Metropolitan area network (MAN)","Network of computing devices typically spanning across two or more buildings within the same town or city"
+"Wide area network (WAN)","Network of computing devices covering a large-scale geographical area, typically across multiple geographical locations"
+Ethernet,"Most commonly used wired network protocol for local and metropolitan area networks"
+Network protocol,"Set of standards and rules that govern how two or more devices communicate over a network"
+Wired network,"Network of devices connected by a physical medium, such as cables"
+Client,"Computer that initiates a connection to a server to request for resources and services to perform operations"
+Server,"Computer that shares resources with and responds to requests from devices and other servers on the network"
+"Wireless access point (WAP)","Network hardware that provides a connection between wireless devices up to 100 metres away and can connect to wired networks"
+Wireless network,"Network of devices in which signals are transmitted without the use of a physical medium"
+Network hub (or hub),"Device that transmits received packets to all connected devices"
+Packet (computing),"A unit of broken-up data containing a header with information about the source and destination addresses that are needed for transmission"
+Network switch (or switch),"Device that constructs a single network by connecting multiple similar networks together"
+Router,"Device that forwards packets between separate networks"
+Demodulation,"Conversion of transmitted signals into digital data"
+Modem,"Device responsible for modulation and demodulation"
+Modulation,"Conversion of digital data into a form suitable for transmission"
