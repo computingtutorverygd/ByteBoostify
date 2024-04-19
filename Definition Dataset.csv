@@ -43,7 +43,7 @@ Magnetic Storage,"Data is stored on a
 magnetic material
 that can be read
 or written by a
-magnetic ¡°head¡±"
+magnetic head"
 Optical Storage,"Data is stored as
 very small pits or
 indentations that
@@ -51,8 +51,8 @@ can be read or
 written by a laser"
 Solid-state Storage,"Data is stored in
 electronic circuits
-called ¡°flash
-memory¡± that
+called flash
+memory that
 have no moving
 parts"
 Decomposition,"Breaking down a complex problem
@@ -79,7 +79,7 @@ the interpreted program
 is running"
 Global variable,"Variable that is created
 outside of a UDF and is
-readable from the UDF¡¯s
+readable from the UDFs
 body if its name is not
 hidden by a local variable"
 Data validation,"Process of ensuring that
@@ -135,7 +135,7 @@ and identity number for
 fraudulent purposes"
 "Access control
 (or authorisation)","Ability of a computer to control
-a user¡¯s access to data and
+a users access to data and
 resources"
 Permissions,"Settings to control the ability of
 users to view or make changes
@@ -172,7 +172,7 @@ or advertising to email addresses which
 are collected from sources such as public
 mailing lists, social networking sites,
 company websites and personal blogs"
-Cookie,"? A small file used by websites to store personal information on a user¡¯s
+Cookie,"? A small file used by websites to store personal information on a users
 
 web browser
 ? Although usually not malicious in nature, cookies are sometimes
@@ -193,7 +193,7 @@ Spamming,"? The mass distribution of unwanted messages or advertising to email
 addresses which are collected from sources such as public mailing lists,
 social networking sites, company websites and personal blogs"
 Spyware,"? A hidden program that secretly collects personal information about
-its users and transmits this information to attackers without the users¡¯
+its users and transmits this information to attackers without the users
 knowledge
 ? The collected data can then be used for unauthorised access to even
 more of the victim's data"
@@ -214,7 +214,7 @@ Virus,"? A computer program that attaches itself to a normally harmless program
 
 and modifies it
 ? When the modified program is run by a user, the virus attaches copies of
-itself to any other programs it can find, thus ¡°infecting¡± them"
+itself to any other programs it can find, thus infecting them"
 Worm,"? A computer program that runs automatically and attempts to spread by
 
 sending copies of itself to other computers
@@ -227,7 +227,7 @@ Anti-virus,"Software to detect, remove
 and stop viruses and other
 malware from running"
 Operating system,"Software designed to
-support a computer¡¯s basic
+support a computers basic
 functions"
 Signature (malware),"Unique evidence that is used
 to detect a known version of
@@ -284,8 +284,8 @@ proprietary software
 in a manner that is not
 permitted by its licence"
 Plagiarism,"Passing off someone
-else¡¯s original work
-as one¡¯s own"
+else's original work
+as one's own"
 Citation,"Statement to
 acknowledge and
 provide credit to

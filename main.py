@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, session, redirect, url_for, request
 from conversion import decimal_to_binary, binary_to_decimal, decimal_to_hexadecimal, hexadecimal_to_decimal
 from random import randint
 import csv
@@ -7,6 +7,8 @@ with open('Definition Dataset.csv', 'r') as f:
     definitions = list(csv.reader(f))
 
 app = Flask(__name__)
+app.secret_key = 'GPT_for_the_W'
+
 
 curr_conversion = None
 
@@ -32,6 +34,7 @@ def number_bases():
                 start_conversion, end_conversion = conversion.split('-')
                 break
         if "digits" in request.form:
+            
             if curr_conversion == 'Decimal-Binary':
                 input_value = request.form["digits"]
                 if not(input_value.isdigit()):
@@ -65,12 +68,30 @@ def number_bases():
                 return render_template('number-bases.html', input_value=hexadecimal, steps=steps, result=result, start_conversion=start_conversion, end_conversion=end_conversion)
     return render_template('number-bases.html')
 
+
+
 @app.route('/flashcards', methods=['GET', 'POST'])
 def flashcards():
-    correct_index = randint(0, len(definitions)-1)
-    wrong_indices = [randint(0, len(definitions)-1), randint(0, len(definitions)-1)]
+    points = request.args.get('points', session.get('points', 0))
+    
+    correct_index = randint(0, len(definitions) - 1)
+    wrong_indices = [randint(0, len(definitions) - 1), randint(0, len(definitions) - 1)]
     while wrong_indices[0] == correct_index or wrong_indices[1] == correct_index or wrong_indices[0] == wrong_indices[1]:
-        wrong_indices = [randint(0, len(definitions)-1), randint(0, len(definitions)-1)]
-    return render_template('flashcards.html', correct_term=definitions[correct_index][0], correct_definition=definitions[correct_index][1], wrong_term=definitions[wrong_indices[0]][0], wrong_definition=definitions[wrong_indices[1]][1])
+        wrong_indices = [randint(0, len(definitions) - 1), randint(0, len(definitions) - 1)]
+    
+    return render_template('flashcards.html', correct_term=definitions[correct_index][0],
+                           correct_definition=definitions[correct_index][1],
+                           wrong_term=definitions[wrong_indices[0]][0],
+                           wrong_definition=definitions[wrong_indices[1]][1],
+                           points=points)
+
+@app.route('/increment_points', methods=['GET', 'POST'])
+def increment_points():
+    points = int(request.args.get('points', 0))
+    is_correct = request.args.get('is_correct', '').lower() == 'true'
+
+    session['points'] = points
+    return redirect(url_for('flashcards', points=points)) # Return a success message to the AJAX request
+
 
 app.run(debug=True)
